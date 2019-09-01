@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mesto</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
 <body>
   <div class="root">
@@ -25,6 +25,7 @@
         <button class="button user-info__button">+</button>
       </div>
     </div>
+
     <div class="places-list root__section">
 
       <!-- Пример вёрстки карточки:
@@ -42,6 +43,7 @@
       конец примера. -->
 
     </div>
+    
     <div class="popup">
       <div class="popup__content">
         <img src="./images/close.svg" alt="" class="popup__close">
@@ -72,7 +74,7 @@
 
   </div>
 
-  <script src="main.js"></script>
+  <script src="<%=htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 
 </body>
 </html>
