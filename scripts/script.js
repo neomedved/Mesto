@@ -4,7 +4,7 @@ import CardList from "./cardlist";
 import Popup from "./popup.js";
 
 const api = new Api({
-  baseUrl: 'http://95.216.175.5/cohort1',
+  baseUrl: NODE_ENV === "production" ? 'https://praktikum.tk/cohort1' : 'http://praktikum.tk/cohort1',
   headers: {
     authorization: 'c5310691-f0f3-45f8-ada1-3315f7eac5e8',
     'Content-Type': 'application/json'
