@@ -1,0 +1,21 @@
+.user-info__button-edit {
+    margin: 24px 0 0;
+    width: 38px;
+    height: 18px;
+    font-size: 12px;
+}
+
+.user-info__button-edit:hover {
+    color: black;
+    background-color: white;
+    border-color: black;
+    border-radius: 3px;
+}
+
+.user-info__button-edit:active {
+    background-color: blue;
+}
+
+.user-info__button-edit:focus {
+    outline: none;
+}
