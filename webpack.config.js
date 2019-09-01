@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -41,6 +42,7 @@ module.exports = {
             filename: 'index.html'
         }),
         new MiniCssExtractPlugin({filename: 'style.[contenthash].css'}),
-        new WebpackMd5Hash()
+        new WebpackMd5Hash(),
+        new webpack.DefinePlugin({'NODE_ENV': JSON.stringify(process.env.NODE_ENV)})
     ]
 }
