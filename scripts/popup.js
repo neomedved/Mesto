@@ -101,7 +101,7 @@
       const link = this.addForm.elements.link.value;
       this.addForm.elements.button.style.fontSize = "18px";
       this.addForm.elements.button.textContent = "Загрузка...";
-      api.addCard(name, link)
+      this.api.addCard(name, link)
         .then(() => this.cardList.addCard(name, link))
         .catch(this.api.defaultCatch)
         .finally(() => {
