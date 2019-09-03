@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "core-js": "^3.1.4"
+    "core-js": "^3.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
@@ -23,6 +23,7 @@
     "mini-css-extract-plugin": "^0.8.0",
     "path": "^0.12.7",
     "postcss-loader": "^3.0.0",
+    "rimraf": "^3.0.0",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0",
