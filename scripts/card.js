@@ -2,9 +2,11 @@ export default class Card {
     constructor(name, link){
       this.element = this.create(name, link);
     }
+
     like(){
       this.element.querySelector(".place-card__like-icon").classList.toggle("place-card__like-icon_liked");
     }
+
     create(name, link){
       const placeCard = document.createElement("div");
       placeCard.classList.add("place-card");
@@ -39,6 +41,7 @@ export default class Card {
   
       return placeCard;
     }
+
     remove(){
       this.element.parentElement.removeChild(this.element);
     }

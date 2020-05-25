@@ -25,20 +25,23 @@ export default class CardList {
         }
       })
     }
+
     addCard(name, link){
       this.cards.push(new Card(name, link));
       this.element.appendChild(this.cards[this.cards.length - 1].element);
     }
-    /* отлично! карточка удаляется из DOM, а также из массива */
+    
     removeCard(index){
       this.cards[index].remove();
       this.cards.splice(index, 1);
     }
+
     findCard(element){
       return this.cards.indexOf(this.cards.find((value) => {
         return value.element.isSameNode(element);
       }))
     }
+    
     render(){
       this.cards.forEach((item) => {
         this.element.appendChild(item.element);
