@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>Mesto</title>
+  <meta name="title" content="Mesto">
+  <meta name="description" content="Интерактивная страница, куда можно добавлять фотографии, удалять их и ставить лайки.">
+  <meta name="author" content="Artem Medvedev">
+
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
 <body>
@@ -26,23 +31,7 @@
       </div>
     </div>
 
-    <div class="places-list root__section">
-
-      <!-- Пример вёрстки карточки:
-
-      <div class="place-card">
-        <div class="place-card__image" style="background-image: url(https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg)">
-          <button class="place-card__delete-icon"></button>
-        </div>
-        <div class="place-card__description">
-          <h3 class="place-card__name">Камчатка</h3>
-          <button class="place-card__like-icon"></button>
-        </div>
-      </div>
-
-      конец примера. -->
-
-    </div>
+    <div class="places-list root__section"></div>
     
     <div class="popup">
       <div class="popup__content">
