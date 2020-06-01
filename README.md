@@ -2,7 +2,7 @@
 *v1.0.1*
 ## О проекте:
 Интерактивная страница, куда можно добавлять фотографии, удалять их и ставить лайки.\
-Стек: HTML, CSS, Javascript, Webpack.\
+Стек: *HTML, CSS, Javascript, Webpack*.\
 **[Домашняя страница](https://mesto.neomedved.site)**\
 **[GitHub Pages](https://neomedved.github.io/mesto-frontend)**
 ### Развёртывание проекта:
