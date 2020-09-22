@@ -1,9 +1,9 @@
 export default class Popup {
   constructor(params){
-    this.profileName = params.profileName; 
-    this.profileJob = params.profileJob; 
-    this.cardList = params.cardList; 
-    this.addForm = params.addElement.querySelector(".popup__form"); 
+    this.profileName = params.profileName;
+    this.profileJob = params.profileJob;
+    this.cardList = params.cardList;
+    this.addForm = params.addElement.querySelector(".popup__form");
     this.editForm = params.editElement.querySelector(".popup__form");
     this.api = params.api;
 
@@ -104,4 +104,4 @@ export default class Popup {
       }
     }
   }
-}
+};

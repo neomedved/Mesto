@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const WebpackMd5Hash = require('webpack-md5-hash');
 
+require('dotenv').config();
+
 module.exports = {
     entry: { main: './src/index.js' },
     output: {
@@ -11,10 +13,10 @@ module.exports = {
         filename: '[name].[chunkhash].js'
     },
     module: {
-        rules: [{ 
-            test: /\.js$/, 
-            use: { loader: "babel-loader" }, 
-            exclude: /node_modules/ 
+        rules: [{
+            test: /\.js$/,
+            use: { loader: "babel-loader" },
+            exclude: /node_modules/
         },
         {
             test: /\.css$/,
@@ -43,6 +45,9 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({filename: 'style.[contenthash].css'}),
         new WebpackMd5Hash(),
-        new webpack.DefinePlugin({'NODE_ENV': JSON.stringify(process.env.NODE_ENV)})
-    ]
-}
+        new webpack.DefinePlugin({
+            'API_URL': JSON.stringify(process.env.API_URL),
+            'API_TOKEN': JSON.stringify(process.env.API_TOKEN),
+        }),
+    ],
+};
